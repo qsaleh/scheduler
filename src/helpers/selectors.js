@@ -1,14 +1,11 @@
-export function getAppointmentsForDay(state, day) {
-  const singleDay = state.days.filter((x) => { 
-    return x.name === day;
-    });
-
-    if (singleDay.length === 0) {
-      return [];
+export default function getAppointmentsForDay(state, day) {
+  const filteredAppointments = []
+  state.days.forEach(stateDay => {
+    if (stateDay.name === day) {
+      stateDay.appointments.forEach(appointmentId => {
+        filteredAppointments.push(state.appointments[appointmentId])
+      })
     }
-    const mappedAppointments = singleDay.appointments.map((element) => {
-      return state.appointments[element]
-    });
-  
-    return mappedAppointments;
+  })
+  return filteredAppointments
 }
