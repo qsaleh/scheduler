@@ -2,6 +2,11 @@
 
 A React application that allows users to book and cancel interviews. Scheduler combines a concise API with a WebSocket server to build a realtime experience.
 
+!["Start-up screen"](https://github.com/qsaleh/scheduler/blob/master/docs/Start-up.png)
+!["Add appointment"](https://github.com/qsaleh/scheduler/blob/master/docs/Add Appointment.png)
+!["After appointment is added"](https://github.com/qsaleh/scheduler/blob/master/docs/After Appointment Added.png)
+!["Confirm appointment delete"](https://github.com/qsaleh/scheduler/blob/master/docs/Confirm Appointment Delete.png)
+
 ## Setup
 
 Install dependencies with `npm install`.
